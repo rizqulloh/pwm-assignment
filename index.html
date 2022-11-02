@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="head">
+          <h1 class="title">Form Pendaftaran</h1>
+          <p>Isikan data diri anda melalui form di bawah ini</p>
+        </div>
+        <form action="#">
+          <label for="nama" class="form-input">
+            <span class="form-title">Nama</span>
+            <input type="text" id="nama" placeholder="type here" />
+          </label>
+          <label for="tempat-lahir" class="form-input">
+            <span class="form-title">Tempat Lahir</span>
+            <input type="text" id="tempat-lahir" placeholder="type here" />
+          </label>
+          <label for="lahir" class="form-input">
+            <span class="form-title">Tanggal Lahir</span>
+            <div class="select-group">
+              <select name="tanggal_lahir" id="#tanggal_lahir">
+                <option value="">1</option>
+              </select>
+              <select name="bulan_lahir" id="#bulan_lahir">
+                <option value="">Januari</option>
+              </select>
+              <select name="bulan_lahir" id="#bulan_lahir">
+                <option value="">1991</option>
+              </select>
+            </div>
+          </label>
+          <label for="jenis-kelamin" class="form-input">
+            <span class="form-title">Jenis Kelamin</span>
+            <div class="input-radio">
+              <div class="radio-group">
+                <input type="radio" id="male" name="jenis-kelamin" />
+                <label for="male">Laki-laki</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="female" name="jenis-kelamin" />
+                <label for="female">Perempuan</label>
+              </div>
+            </div>
+          </label>
+          <label for="tempat-lahir" class="form-input">
+            <span class="form-title">Alamat</span>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+          </label>
+          <label for="alamat-email" class="form-input">
+            <span class="form-title">Alamat Email</span>
+            <input type="text" id="alamat-email" />
+          </label>
+          <label for="url-web" class="form-input">
+            <span class="form-title">URL Web</span>
+            <div class="input-prefix">
+              <span>https://</span>
+              <input type="text" id="url-web" />
+            </div>
+          </label>
+          <label for="no-hp" class="form-input">
+            <span class="form-title">No.Hp</span>
+            <input type="number" id="no-hp" />
+          </label>
+          <div class="button-group">
+            <button class="btn btn-danger-ol">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="identity">
+        <div class="img-wrapper">
+          <img src="./assets/images/person.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Put your name here</h3>
+          <p>123456789012</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
